@@ -14,10 +14,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
       <div className="card">
         <div className="flex items-center justify-start gap-3">
           <FaUserCircle size={50} />
-          <div>
-            <h1>Hello User</h1>
-            <h1 className="text-sm text-slate-500">Premium user</h1>
-          </div>
+         
         </div>
         <nav className="mt-12">
           <ul className="space-y-4 text-xl">
@@ -36,9 +33,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
         </nav>
       </div>
       <div className="footer">
-        <h1>
-          Made by GIST Student: Rakishev Sanzhar{" "}
-        </h1>
+       
       </div>
     </div>
   );

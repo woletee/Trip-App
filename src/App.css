@@ -1,0 +1,155 @@
+/* src/App.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .app {
+    text-align: center;
+    padding: 100px 350px;
+    max-width: 8000px;  /* Increased width */
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    min-height: 80vh;  /* Increased height */
+  }
+  
+  .app__title {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .app__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .dsl-list {
+    flex: 1;
+    padding: 20px;
+    margin-right: 30px;  /* Adjusted for more spacing */
+    background: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dsl-list__title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .dsl-list__items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dsl-list__item {
+    margin-bottom: 10px;
+  }
+  
+  .dsl-list__button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #333;
+    background: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .dsl-list__button:hover {
+    background-color: #d5d5d5;
+  }
+  
+  .dsl-list__button--selected {
+    background-color: #4caf50;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .app__grids {
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+  }
+  
+  .app__grid-wrapper {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .app__grid-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .app__apply-button {
+    margin-top: 30px;  /* Increased margin-top */
+    padding: 12px 30px;  /* Increased padding for a larger button */
+    font-size: 1.5rem;  /* Increased font size */
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .app__apply-button:hover:not(:disabled) {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.5);
+  }
+  
+  .app__apply-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* src/components/Grid.css */
+  .grid {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .grid-row {
+    display: flex;
+  }
+  
+  .grid-cell {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  

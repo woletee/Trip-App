@@ -1,0 +1,59 @@
+/* src/components/Navbar.css */
+.navbar {
+    background-color: #1f2d3d; /* Dark background for the navbar */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: flex-start;  /* Align items to the left */
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif; /* Modern, bold font */
+    font-size: 2rem; /* Larger font size for prominence */
+    font-weight: 700; /* Bold font weight */
+    color: #e74c3c; /* Vibrant red color */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 3px; /* Spacing between letters */
+    background: linear-gradient(90deg, #e67e22, #e74c3c, #d35400); /* Gradient background */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Fill text with gradient */
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+.logo:hover {
+    color: #ffffff; /* Change color on hover */
+    transform: scale(1.05); /* Slightly enlarge the title on hover */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem; /* Increase the gap between navigation items */
+    margin: 0;
+    padding: 0;
+    margin-left: 25rem; /* Move the navigation items slightly to the right */
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #bdc3c7; /* Light gray for navigation text */
+    font-size: 1.1rem; /* Slightly larger font for better readability */
+    font-family: 'Roboto', sans-serif; /* Clean, modern font */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+    padding: 0.5rem 1rem; /* Add padding for better clickability */
+    border-radius: 5px; /* Rounded corners for a softer look */
+}
+
+.nav-item:hover,
+.nav-item.active {
+    color: #ffffff; /* White text on hover */
+    background-color: #e74c3c; /* Red background on hover */
+    box-shadow: 0 4px 6px rgba(231, 76, 60, 0.3); /* Subtle shadow effect on hover */
+}
+
+.nav-item.active {
+    background-color: #e67e22; /* Different background for active state */
+    color: #ffffff; /* White text for active item */
+}

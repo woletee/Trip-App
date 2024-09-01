@@ -1,0 +1,22 @@
+/* src/components/Grid.css */
+.grid {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    width: fit-content;
+    margin: 20px auto;
+  }
+  
+  .grid-row {
+    display: flex;
+  }
+  
+  .grid-cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
