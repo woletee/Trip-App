@@ -13,7 +13,7 @@ def convert_to_float(value):
         return float(value)
     except ValueError:
         return None
-
+#this is fir the initalization of the API
 
 # Load data from CSV
 print("Loading data from CSV...")
